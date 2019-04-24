@@ -12,6 +12,7 @@
 		C34BC518226F47B300E01053 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C34BC516226F47B300E01053 /* Main.storyboard */; };
 		C34BC51A226F47B500E01053 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C34BC519226F47B500E01053 /* Assets.xcassets */; };
 		C34BC51D226F47B500E01053 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C34BC51B226F47B500E01053 /* LaunchScreen.storyboard */; };
+		C34BC525226F486100E01053 /* ShowColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34BC524226F486100E01053 /* ShowColorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		C34BC519226F47B500E01053 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C34BC51C226F47B500E01053 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C34BC51E226F47B500E01053 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C34BC524226F486100E01053 /* ShowColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowColorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				C34BC512226F47B300E01053 /* AppDelegate.swift */,
 				C34BC514226F47B300E01053 /* ViewController.swift */,
+				C34BC524226F486100E01053 /* ShowColorViewController.swift */,
 				C34BC516226F47B300E01053 /* Main.storyboard */,
 				C34BC519226F47B500E01053 /* Assets.xcassets */,
 				C34BC51B226F47B500E01053 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				C34BC515226F47B300E01053 /* ViewController.swift in Sources */,
 				C34BC513226F47B300E01053 /* AppDelegate.swift in Sources */,
+				C34BC525226F486100E01053 /* ShowColorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
