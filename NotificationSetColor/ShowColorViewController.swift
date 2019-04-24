@@ -27,6 +27,9 @@ class ShowColorViewController: UIViewController {
         
     }
     
+        override func viewWillDisappear(_ animated: Bool) {
+            notiCenter.removeObserver(observer!)
+        }
 
     
     //MARK:- Selector setColor

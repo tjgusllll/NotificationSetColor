@@ -7,13 +7,13 @@
 //  Use Selector
 
 import UIKit
-
+var observer: NSObjectProtocol?
 class ViewController: UIViewController {
     
     //MARK:- Properties
     let notiCenter = NotificationCenter.default
     let showColorNoti2 = Notification.Name.init("setColor2") //Use Closure
-    var observer: NSObjectProtocol?
+    
     let setColorVC = ShowColorViewController()
     
     //MARK:- UI Properties
@@ -47,9 +47,7 @@ class ViewController: UIViewController {
         alphaSlider.maximumValue = UI.alphaValue
     }
     
-//    override func viewWillDisappear(_ animated: Bool) {
-//        notiCenter.removeObserver(observer!)
-//    }
+
 
     //MARK:- Use Selector
     @IBAction func setColor(_ sender: Any) {
