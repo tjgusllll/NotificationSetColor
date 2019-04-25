@@ -12,9 +12,7 @@ class ViewController: UIViewController {
     
     //MARK:- Properties
     let notiCenter = NotificationCenter.default
-    let showColorNoti2 = Notification.Name.init("setColor2") //Use Closure
-    
-    let setColorVC = ShowColorViewController()
+
     
     //MARK:- UI Properties
     struct UI {
@@ -32,12 +30,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        
-        //Use Closure
-        observer = notiCenter.addObserver(forName: showColorNoti2, object: nil, queue: .main) { (noti) in
-            print(noti)
-            self.setColorVC.setViewColor(noti)
-        }
     }
     
     func setupUI() {
@@ -49,7 +41,7 @@ class ViewController: UIViewController {
     
 
 
-    //MARK:- Use Selector
+    //MARK:- Use Notification
     @IBAction func setColor(_ sender: Any) {
         
         let colorValue = ["Red":redSlider.value, "Green":greenSlider.value, "Blue":blueSlider.value, "Alpha":alphaSlider.value]
@@ -57,12 +49,22 @@ class ViewController: UIViewController {
         notiCenter.post(name: showColorNoti, object: self, userInfo: colorValue)
     }
     
-    
-    //MARK:- Use Closure
-    @IBAction func setColorClosure(_ sender: Any) {
-        let colorValue = ["Red":redSlider.value, "Green":greenSlider.value, "Blue":blueSlider.value, "Alpha":alphaSlider.value]
+    var result = ColorModal()
+    @IBAction func setClosureColor(_ sender: Any) {
+       
+        result.red = redSlider.value
+        result.green = greenSlider.value
+        result.blue = blueSlider.value
+        result.alpha = alphaSlider.value
+        print(result)
         
-        notiCenter.post(name: showColorNoti2, object: self, userInfo: colorValue)
     }
+
+    func setColor(completion: @escaping (ColorModal) -> ()) {
+        
+        print("SetColor : \(result)")
+        completion(result)
+    }
+   
 }
 

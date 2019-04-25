@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C348B4322270343E00448DB4 /* ColorModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C348B4312270343E00448DB4 /* ColorModal.swift */; };
 		C34BC513226F47B300E01053 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34BC512226F47B300E01053 /* AppDelegate.swift */; };
 		C34BC515226F47B300E01053 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34BC514226F47B300E01053 /* ViewController.swift */; };
 		C34BC518226F47B300E01053 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C34BC516226F47B300E01053 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C348B4312270343E00448DB4 /* ColorModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorModal.swift; sourceTree = "<group>"; };
 		C34BC50F226F47B300E01053 /* NotificationSetColor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotificationSetColor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C34BC512226F47B300E01053 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C34BC514226F47B300E01053 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				C34BC512226F47B300E01053 /* AppDelegate.swift */,
 				C34BC514226F47B300E01053 /* ViewController.swift */,
 				C34BC524226F486100E01053 /* ShowColorViewController.swift */,
+				C348B4312270343E00448DB4 /* ColorModal.swift */,
 				C34BC516226F47B300E01053 /* Main.storyboard */,
 				C34BC519226F47B500E01053 /* Assets.xcassets */,
 				C34BC51B226F47B500E01053 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C348B4322270343E00448DB4 /* ColorModal.swift in Sources */,
 				C34BC515226F47B300E01053 /* ViewController.swift in Sources */,
 				C34BC513226F47B300E01053 /* AppDelegate.swift in Sources */,
 				C34BC525226F486100E01053 /* ShowColorViewController.swift in Sources */,

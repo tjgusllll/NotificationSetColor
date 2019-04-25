@@ -63,19 +63,19 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U2w-3f-iBh">
-                                <rect key="frame" x="143" y="348" width="88" height="30"/>
+                                <rect key="frame" x="158" y="348" width="59" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Use Selector"/>
+                                <state key="normal" title="Use Noti"/>
                                 <connections>
                                     <action selector="setColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n7L-Zj-8Dq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HUw-VM-tMR">
-                                <rect key="frame" x="145" y="401" width="84" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2W9-XT-3WR">
+                                <rect key="frame" x="145" y="405" width="84" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Use Closure"/>
                                 <connections>
-                                    <action selector="setColorClosure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BLb-oa-8YA"/>
+                                    <action selector="setClosureColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8BV-WB-0ya"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -146,6 +146,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ry8-TT-lfT" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MUB-lg-LTk">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
